@@ -1,0 +1,188 @@
+.header {
+  &__wrapper {
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 235px;
+    position: relative;
+  }
+  &__biysk-ikon {
+    width: 325px;
+    height: 80px;
+    margin-top: 365px;
+  }
+  &__text {
+    color: #d9d9d9;
+    font-family: Formular;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+  &__navigation {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__menuOn-ikon {
+    width: 58px;
+    height: 50px;
+    margin-left: 65px;
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-family: Formular;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 65px;
+    border: 1.8px black solid;
+    border-right: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    background: black
+      linear-gradient(to bottom right, transparent 50%, black 50%)
+      calc(100% + 2px) 100%/14px 70px no-repeat;
+
+    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
+
+    &:hover {
+      background-color: transparent;
+      color: black;
+      .header {
+        &__button-ikon {
+          * {
+            stroke: black;
+          }
+        }
+      }
+    }
+    @include laptop-l {
+      display: none;
+    }
+  }
+
+  &__button-ikon {
+    width: 20px;
+    height: 20px;
+    * {
+      stroke: white;
+      transition: stroke 0.5s ease;
+    }
+  }
+
+  &__menu {
+    width: 580px;
+    height: 1080px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    display: flex;
+    gap: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+    @include tablet {
+      width: 360px;
+    }
+  }
+  &__close-ikon {
+    width: 58px;
+    height: 50px;
+    margin-top: 43px;
+    cursor: pointer;
+    @include tablet {
+      width: 30px;
+      height: 28px;
+    }
+  }
+  &__menu-container {
+    width: 502px;
+    height: 100%;
+    background-color: black;
+    @include tablet {
+      width: 300px;
+    }
+  }
+  &__menu-ikon {
+    width: 174px;
+    height: 42px;
+    margin-top: 65px;
+    margin-left: 65px;
+    cursor: pointer;
+    @include tablet {
+      margin-left: 20px;
+    }
+  }
+  &__list-link {
+    margin-left: 65px;
+    margin-top: 143px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include tablet {
+      margin-left: 5px;
+      margin-top: 50px;
+    }
+  }
+  &__nav-linkCont {
+    overflow: hidden;
+  }
+  &__link-animCont {
+    transform: translateX(-9%);
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: translateX(0%);
+    }
+  }
+  &__nav-link {
+    color: #fff;
+    font-family: Formular;
+    font-size: 3.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  &__linkArrow-ikon {
+    stroke: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+  }
+  &__contacts {
+    color: #fff;
+    font-family: Formular;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 350px;
+    @include tablet {
+      margin-left: 20px;
+    }
+  }
+}

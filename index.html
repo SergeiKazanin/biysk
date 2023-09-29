@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biysk</title>
+    <script src="./splide.min.js" defer></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="splide-core.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__wrapper">
+          <svg class="header__biysk-ikon">
+            <use xlink:href="./sprite.svg#BIYSK"></use>
+          </svg>
+          <span class="header__text">центр вселенной, жизни и счастья</span>
+          <nav class="header__navigation">
+            <svg class="header__menuOn-ikon">
+              <use xlink:href="./sprite.svg#Menu"></use>
+            </svg>
+            <div class="header__button">
+              <svg class="header__button-ikon">
+                <use xlink:href="./sprite.svg#Arrow"></use>
+              </svg>
+              <span>Стать бийчанином</span>
+            </div>
+          </nav>
+          <div class="header__menu">
+            <div class="header__menu-container">
+              <svg class="header__menu-ikon">
+                <use xlink:href="./sprite.svg#BIYSK"></use>
+              </svg>
+              <ul class="header__list-link">
+                <li class="header__nav-linkCont">
+                  <div class="header__link-animCont">
+                    <svg class="header__linkArrow-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                    <a class="header__nav-link" href="#">О городе</a>
+                  </div>
+                </li>
+                <li class="header__nav-linkCont">
+                  <div class="header__link-animCont">
+                    <svg class="header__linkArrow-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                    <a class="header__nav-link" href="#">Преимущества</a>
+                  </div>
+                </li>
+                <li class="header__nav-linkCont">
+                  <div class="header__link-animCont">
+                    <svg class="header__linkArrow-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                    <a class="header__nav-link" href="#">Ещё преимущества</a>
+                  </div>
+                </li>
+                <li class="header__nav-linkCont">
+                  <div class="header__link-animCont">
+                    <svg class="header__linkArrow-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                    <a class="header__nav-link" href="#">О квартирах</a>
+                  </div>
+                </li>
+                <li class="header__nav-linkCont">
+                  <div class="header__link-animCont">
+                    <svg class="header__linkArrow-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                    <a class="header__nav-link" href="#">Контакты</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header__contacts">
+                <span>+7 800 555 35 35</span>
+                <span>Алтайский край</span>
+              </div>
+            </div>
+            <svg class="header__close-ikon">
+              <use xlink:href="./sprite.svg#Close"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+      <!-- Header -->
+      <!-- aboutBiysk -->
+      <section class="about-biysk">
+        <div class="about-biysk__wrapper">
+          <h1 class="about-biysk__header">Быть ближе к жизни</h1>
+          <div class="about-biysk__flex-content">
+            <img
+              class="about-biysk__img"
+              src="./img/aboutBiysk.webp"
+              alt="aboutBiysk"
+            />
+            <div class="about-biysk__left-area">
+              <div class="about-biysk__text">
+                Бийск — ваша площадка для комфортной жизни в развивающемся
+                регионе. Современная инфраструктура, удобное расположение и
+                множество возможностей для активной и насыщенной жизни.
+              </div>
+              <div class="about-biysk__sity">
+                <svg class="about-biysk__MapPoint">
+                  <use xlink:href="./sprite.svg#MapPoint"></use>
+                </svg>
+                <span class="about-biysk__text2">Алтайский край</span>
+              </div>
+              <div class="header__button about-biysk__button">
+                <svg class="header__button-ikon">
+                  <use xlink:href="./sprite.svg#Arrow"></use>
+                </svg>
+                <span> Стать бийчанином</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- aboutBiysk -->
+      <!-- aboutPlace -->
+      <section class="about-place">
+        <div class="about-place__wrapper">
+          <h1 class="about-place__head1">Уникальное место</h1>
+          <h1 class="about-place__head2">для счастья</h1>
+          <div class="about-place__tab">
+            <ul class="about-place__list">
+              <li class="about-place__link active" id="0">
+                Современные технологии
+              </li>
+              <li class="about-place__link" id="1">Транспортная доступность</li>
+              <li class="about-place__link" id="2">Счастье</li>
+              <li class="about-place__link" id="3">Красотища</li>
+            </ul>
+            <div class="about-place__img-container">
+              <div id="0" class="about-place__tab-img active">
+                <img src="img/tab1.webp" alt="tab" />
+                <span class="about-place__img-text"
+                  >Энергоэффективные здания класса А позволят вам экономить
+                  ресурсы на отоплении и энергообеспечении</span
+                >
+              </div>
+              <div id="1" class="about-place__tab-img">
+                <img src="img/tab2.webp" alt="tab" />
+                <span class="about-place__img-text"
+                  >Благодаря удобному расположению в развивающемся регионе, с
+                  легкостью можно доехать как до живописного Алтая, так и до
+                  столицы Сибирия</span
+                >
+              </div>
+              <div id="2" class="about-place__tab-img">
+                <img src="img/tab3.webp" alt="tab" />
+                <span class="about-place__img-text"
+                  >Бийск занимает гран-при городов по индексу счастья</span
+                >
+              </div>
+              <div id="3" class="about-place__tab-img">
+                <img src="img/tab4.webp" alt="tab" />
+                <span class="about-place__img-text"
+                  >Место, где красота природы сливается с живописными пейзажами.
+                  Здесь вы сможете наслаждаться великолепными видами,
+                  вдохновляющими лесами и живописными реками.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- aboutPlace -->
+      <!-- newSity -->
+      <section class="newSity">
+        <div class="newSity__wrapper">
+          <h1 class="newSity__header">ваш новый город</h1>
+          <div class="newSity__flex-container">
+            <div class="newSity__left-block">
+              <span class="newSity__left-text">
+                Наш город создан для ваших амбиций: просторные, функциональные,
+                с инновационной инфраструктурой и невероятными видами панельки.
+                Мы предлагаем идеальное пространство для вдохновения и роста
+                вашего бизнеса.
+              </span>
+              <div class="newSity__button">
+                <svg class="newSity__button-ikon">
+                  <use xlink:href="./sprite.svg#Arrow"></use>
+                </svg>
+                <span>Выбрать панельку</span>
+              </div>
+              <img
+                class="newSity__left-img"
+                src="./img/newSity1.webp"
+                alt="city"
+              />
+            </div>
+            <div class="newSity__right-block">
+              <img src="./img/newSity2.webp" alt="city" />
+              <div class="newSity__right-text">
+                <div class="newSity__right-text-element">
+                  <div>
+                    <span class="newSity__right-text1">от </span>
+                    <span class="newSity__right-text2">13 </span>
+                    <span class="newSity__right-text1">м²</span>
+                  </div>
+                  <div>
+                    <p class="newSity__right-text3">площадь сан.узлов</p>
+                  </div>
+                </div>
+                <div class="newSity__right-text-element">
+                  <div>
+                    <span class="newSity__right-text1">от </span>
+                    <span class="newSity__right-text2">700 </span>
+                    <span class="newSity__right-text1">м²</span>
+                  </div>
+                  <div>
+                    <p class="newSity__right-text3">площадь подъездов</p>
+                  </div>
+                </div>
+                <div class="newSity__right-text-element">
+                  <div>
+                    <span class="newSity__right-text2">5,0 </span>
+                    <span class="newSity__right-text1">м</span>
+                  </div>
+                  <div>
+                    <p class="newSity__right-text3">высота домов</p>
+                  </div>
+                </div>
+                <div class="newSity__right-text-element">
+                  <div>
+                    <span class="newSity__right-text2">2,0 </span>
+                    <span class="newSity__right-text1">м</span>
+                  </div>
+                  <div>
+                    <p class="newSity__right-text3">высота этажей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- newSity -->
+      <!-- freeApartment -->
+      <section class="freeApartment">
+        <div class="freeApartment__wrapper">
+          <div class="freeApartment__modal">
+            <div class="freeApartment__modal-icon">
+              <svg class="freeApartment__modal-close-ikon">
+                <use xlink:href="./sprite.svg#CloseWihite"></use>
+              </svg>
+            </div>
+
+            <h1 class="freeApartment__modal-head">Квартира №307</h1>
+            <div class="freeApartment__modal-flex">
+              <div class="freeApartment__modal-left">
+                <img
+                  class="freeApartment__img"
+                  src="./img/apartModal.webp"
+                  alt="Apartment"
+                />
+              </div>
+              <div class="freeApartment__modal-right">
+                <p>
+                  <span class="freeApartment__modal-text1">179 400 </span>
+                  <span class="freeApartment__modal-text2">₽/мес</span>
+                </p>
+                <p>
+                  <span class="freeApartment__modal-text3">46.26 </span>
+                  <span class="freeApartment__modal-text2">м²</span>
+                </p>
+                <p>
+                  <span class="freeApartment__modal-text3">2 </span>
+                  <span class="freeApartment__modal-text2">этаж</span>
+                </p>
+                <p class="freeApartment__modal-text4">
+                  Просторное квартирное помещение свободного назначения, гибкая
+                  разграниченность пространства под ваши нужды. Создайте
+                  комфортные рабочие зоны, переговорные сан.узлы или отдельные
+                  кухни.
+                </p>
+                <div class="freeApartment__button">
+                  <svg class="freeApartment__button-ikon">
+                    <use xlink:href="./sprite.svg#Arrow"></use>
+                  </svg>
+                  <span>Купить</span>
+                </div>
+              </div>
+            </div>
+            <div class="freeApartment__modal-footer">
+              <span class="freeApartment__modal-footer-text"
+                >Арендовать эту квартиру</span
+              >
+              <div>
+                <form class="freeApartment__form" action="">
+                  <input
+                    placeholder="Имя"
+                    class="freeApartment__input"
+                    type="text"
+                  />
+                  <input
+                    placeholder="Телефон"
+                    class="freeApartment__input"
+                    type="text"
+                  />
+                  <div class="freeApartment__send-block">
+                    <button
+                      type="submit"
+                      class="freeApartment__button freeApartment__button_send"
+                    >
+                      <svg class="freeApartment__button-ikon">
+                        <use xlink:href="./sprite.svg#Arrow"></use>
+                      </svg>
+                      <span>Отправить</span>
+                    </button>
+                    <p class="freeApartment__send-text">
+                      Нажимая “отправить” вы даёте согласие на обработку своих
+                      персональных данных согласно политике конфиденциальности
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <h1 class="freeApartment__header">Свободные квартиры</h1>
+          <div class="freeApartment__splide-wrapper">
+            <div
+              class="freeApartment__main-slider splide"
+              aria-label="free apartment gallery"
+            >
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <svg class="freeApartment__linkArrow-ikon">
+                    <use xlink:href="./sprite.svg#Arrow"></use>
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <svg class="freeApartment__linkArrow-ikon">
+                    <use xlink:href="./sprite.svg#Arrow"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <img src="./img/apart1.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >179 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart2.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >80 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart3.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >65 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart1.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >179 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart2.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >80 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart3.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >65 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">3 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart1.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >179 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart2.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >80 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart3.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >65 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">3 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart1.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >179 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart2.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >80 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">2 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="splide__slide">
+                    <img src="./img/apart3.png" alt="Apartment" />
+                    <div class="freeApartment__text-flex">
+                      <span class="freeApartment__slide-text1"
+                        >65 400 ₽/мес</span
+                      >
+                      <span class="freeApartment__slide-text2">3 этаж</span>
+                    </div>
+                    <svg class="freeApartment__Arrow-apart-ikon">
+                      <use xlink:href="./sprite.svg#Arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- freeApartment -->
+      <!-- footer -->
+      <section class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__feedback">
+            <h1 class="footer__feedback-header">Связаться с мером</h1>
+            <div class="footer__feedback-flex">
+              <ul class="footer__feedback-left">
+                <li>
+                  <a class="footer__feedback-phone" href="tel:+7(800)-555-3535"
+                    >+7(800)-555-3535</a
+                  >
+                </li>
+                <li class="footer__feedback-mail-li">
+                  <a class="footer__feedback-mail" href="mailto:info@biysk.ru"
+                    >info@biysk.ru</a
+                  >
+                </li>
+              </ul>
+              <div class="footer__feedback-right">
+                <span class="footer__feedback-right-head"
+                  >Записаться на встречу</span
+                >
+                <form class="footer__feedback-form" action="">
+                  <input
+                    placeholder="Имя"
+                    class="footer__feedback-input"
+                    type="text"
+                  />
+                  <input
+                    placeholder="Телефон"
+                    class="footer__feedback-input"
+                    type="text"
+                  />
+                  <div class="footer__feedback-send-block">
+                    <button type="submit" class="footer__feedback-button">
+                      <svg class="footer__feedback-button-ikon">
+                        <use xlink:href="./sprite.svg#Arrow"></use>
+                      </svg>
+                      <span>Отправить</span>
+                    </button>
+                    <p class="footer__footer-send-text">
+                      Нажимая “отправить” вы даёте согласие на обработку своих
+                      персональных данных согласно политике конфиденциальности
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer__footer">
+            <div class="footer__footer-flex">
+              <div class="footer__footer-left">
+                <svg class="footer__footer-logo-ikon">
+                  <use xlink:href="./sprite.svg#BIYSK-BLACK"></use>
+                </svg>
+                <span class="footer__footer-text-info"
+                  >Вся информация на сайте носит информационный характер и не
+                  является публичной офертой</span
+                >
+                <a class="footer__footer-politick" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+              <div class="footer__footer-right">
+                <div class="footer__footer-social">
+                  <svg class="footer__footer-social-ikon">
+                    <use xlink:href="./sprite.svg#instagram"></use>
+                  </svg>
+                  <svg class="footer__footer-social-ikon">
+                    <use xlink:href="./sprite.svg#VK"></use>
+                  </svg>
+                  <svg class="footer__footer-social-ikon">
+                    <use xlink:href="./sprite.svg#telegram"></use>
+                  </svg>
+                </div>
+                <span class="footer__footer-copi">©2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+    </div>
+  </body>
+</html>

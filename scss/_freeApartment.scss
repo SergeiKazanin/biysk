@@ -1,0 +1,292 @@
+.freeApartment {
+  &__wrapper {
+    background-color: #202020;
+    height: 938px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+  &__modal {
+    width: 100%;
+    height: 1343px;
+    background-color: $color-text2;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+  }
+  &__modal-icon {
+    display: flex;
+    justify-content: end;
+    margin-top: 45px;
+    cursor: pointer;
+  }
+  &__modal-close-ikon {
+    width: 58px;
+    height: 50px;
+    margin-right: 65px;
+    @include laptop-l {
+      width: 30px;
+      height: 28px;
+    }
+  }
+  &__modal-head {
+    color: #fff;
+    font-family: Formular;
+    font-size: 6.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-left: 65px;
+    @include laptop-l {
+      font-size: 4rem;
+      margin-top: 5px;
+    }
+  }
+  &__modal-flex {
+    max-width: 1311px;
+    display: flex;
+    gap: 80px;
+    margin: 60px auto 0 auto;
+    @include laptop-l {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  &__img {
+    width: 300px;
+  }
+  &__modal-text1 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 7.2rem;
+    font-weight: 700;
+  }
+  &__modal-text2 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  &__modal-text3 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+  &__modal-text4 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 1.8rem;
+    line-height: 140%; /* 25.2px */
+  }
+  &__modal-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 35px;
+  }
+  &__button {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-family: Formular;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1.8px white solid;
+    border-right: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(to bottom right, transparent 50%, white 50%)
+      calc(100% + 1.5px) 100%/13px 70px no-repeat;
+
+    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
+
+    &:hover {
+      background-color: #fff;
+      color: black;
+      .freeApartment {
+        &__button-ikon {
+          * {
+            stroke: black;
+          }
+        }
+      }
+    }
+  }
+
+  &__button-ikon {
+    width: 20px;
+    height: 20px;
+    * {
+      stroke: white;
+      transition: stroke 0.5s ease;
+    }
+  }
+
+  &__modal-footer {
+    max-width: 1311px;
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto 0 auto;
+    width: 100%;
+    @include laptop-l {
+      flex-direction: column;
+    }
+  }
+  &__modal-footer-text {
+    color: #fff;
+    font-family: Formular;
+    font-size: 4.8rem;
+    width: 348px;
+    @include laptop-l {
+      width: auto;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__send-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  &__send-text {
+    color: white;
+    font-family: Formular;
+    font-size: 1.4rem;
+    max-width: 449px;
+  }
+  &__button_send {
+    width: 170px;
+  }
+  &__input {
+    border: none;
+    outline: none;
+    width: auto;
+    height: 40px;
+    color: white;
+    font-family: Formular;
+    font-size: 3rem;
+    background-color: inherit;
+    &::placeholder {
+      color: white;
+      font-family: Formular;
+      font-size: 3rem;
+    }
+  }
+  &__header {
+    color: #fff;
+    font-family: Formular;
+    font-size: 6.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 110px;
+    @include laptop-l {
+      font-size: 4rem;
+    }
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+  &__linkArrow-ikon {
+    width: 60px;
+    height: 44px;
+    * {
+      stroke: white;
+    }
+  }
+  &__splide-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 16px;
+    @include laptop-l {
+      justify-content: center;
+    }
+  }
+  &__text-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+  }
+  &__slide-text1 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  &__slide-text2 {
+    color: #fff;
+    font-family: Formular;
+    font-size: 1.8rem;
+  }
+  &__Arrow-apart-ikon {
+    width: 25px;
+    height: 25px;
+    * {
+      stroke: white;
+    }
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+}
+.splide {
+  @include laptop-l {
+    max-width: 95% !important;
+  }
+}
+.splide__slide {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .freeApartment__Arrow-apart-ikon {
+      opacity: 1;
+    }
+  }
+}
+
+.splide__arrows {
+  position: absolute;
+  left: -210px;
+  top: 360px;
+  @include laptop-l {
+    display: none;
+  }
+}
+.splide__arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
+  width: 60px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 40px;
+  &--prev {
+    transform: rotate(180deg);
+  }
+}

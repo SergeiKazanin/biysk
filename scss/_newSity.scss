@@ -1,0 +1,150 @@
+.newSity {
+  &__wrapper {
+    height: 1320px;
+    text-align: center;
+    margin: 180px auto;
+    max-width: 1311px;
+    @include laptop-l {
+      height: fit-content;
+      margin: 30px auto;
+    }
+  }
+  &__header {
+    color: #000;
+    font-family: Formular;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include laptop-l {
+      font-size: 4rem;
+    }
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+  &__flex-container {
+    display: flex;
+    gap: 109px;
+    margin-top: 95px;
+    @include laptop-l {
+      flex-direction: column;
+      margin-top: 0px;
+      align-items: center;
+    }
+  }
+  &__left-block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    font-family: Formular;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 65px;
+    border: 2px black solid;
+    border-right: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    background: transparent
+      linear-gradient(to bottom right, transparent 50%, black 50%)
+      calc(100% + 2px) 100%/13px 70px no-repeat;
+
+    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
+
+    &:hover {
+      background-color: black;
+      color: white;
+      .newSity {
+        &__button-ikon {
+          * {
+            stroke: white;
+          }
+        }
+      }
+    }
+  }
+  &__button-ikon {
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    * {
+      stroke: black;
+      transition: stroke 0.5s ease;
+    }
+  }
+  &__left-text {
+    color: #000;
+    font-family: Formular;
+    font-size: 1.8rem;
+    line-height: 140%;
+    text-align: start;
+    margin-top: 180px;
+    max-width: 420px;
+    @include laptop-l {
+      margin-top: 20px;
+      max-width: 500px;
+    }
+    @include tablet {
+      max-width: 400px;
+    }
+    @include mobile-big {
+      width: 300px;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+  }
+  &__left-img {
+    margin-top: 175px;
+    @include laptop-l {
+      margin-top: 10px;
+      width: 400px;
+    }
+    @include mobile-big {
+      width: 300px;
+    }
+  }
+  &__right-block {
+    @include laptop-l {
+      display: none;
+    }
+  }
+  &__right-text {
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    column-gap: 35px;
+    row-gap: 70px;
+  }
+  &__right-text-element {
+    width: 350px;
+  }
+  &__right-text1 {
+    color: #434343;
+    font-family: Formular;
+    font-size: 2.8rem;
+  }
+  &__right-text2 {
+    color: #434343;
+    font-family: Formular;
+    font-size: 7.2rem;
+    font-weight: 700;
+  }
+  &__right-text3 {
+    color: $color-text2;
+    font-family: Formular;
+    font-size: 2.8rem;
+    max-width: 160px;
+    margin-left: 85px;
+    margin-top: 8px;
+  }
+}
