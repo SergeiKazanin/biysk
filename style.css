@@ -658,8 +658,10 @@ html {
     gap: 0;
   }
 }
-.freeApartment__img {
-  width: 300px;
+@media (max-width: 1440px) {
+  .freeApartment__img {
+    width: 300px;
+  }
 }
 .freeApartment__modal-text1 {
   color: #fff;

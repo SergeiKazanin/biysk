@@ -62,7 +62,9 @@
     }
   }
   &__img {
-    width: 300px;
+    @include laptop-l {
+      width: 300px;
+    }
   }
   &__modal-text1 {
     color: #fff;
