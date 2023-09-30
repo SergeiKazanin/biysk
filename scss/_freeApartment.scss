@@ -9,6 +9,12 @@
     position: relative;
     overflow: hidden;
     transition: height 0.5s ease;
+    @include tablet {
+      height: 700px;
+    }
+    @include mobile-big {
+      height: 600px;
+    }
   }
   &__modal {
     width: 100%;
@@ -22,6 +28,15 @@
     flex-direction: column;
     transform: translateY(-100%);
     transition: transform 0.5s ease;
+    align-items: center;
+  }
+  &__modal-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include laptop-l {
+      width: 90%;
+    }
   }
   &__modal-icon {
     display: flex;
@@ -36,6 +51,7 @@
     @include laptop-l {
       width: 30px;
       height: 28px;
+      margin-right: 0px;
     }
   }
   &__modal-head {
@@ -50,6 +66,9 @@
       font-size: 4rem;
       margin-top: 5px;
     }
+    @include mobile-big {
+      font-size: 2rem;
+    }
   }
   &__modal-flex {
     max-width: 1311px;
@@ -61,8 +80,11 @@
       gap: 0;
     }
   }
-  &__img {
+  &__modal-img {
     @include laptop-l {
+      width: 430px;
+    }
+    @include mobile-big {
       width: 300px;
     }
   }
@@ -71,18 +93,30 @@
     font-family: Formular;
     font-size: 7.2rem;
     font-weight: 700;
+    @include tablet {
+      font-size: 5rem;
+    }
+    @include mobile-big {
+      font-size: 3rem;
+    }
   }
   &__modal-text2 {
     color: #fff;
     font-family: Formular;
     font-size: 2.8rem;
     font-weight: 700;
+    @include mobile-big {
+      font-size: 1.8rem;
+    }
   }
   &__modal-text3 {
     color: #fff;
     font-family: Formular;
     font-size: 3.6rem;
     font-weight: 700;
+    @include mobile-big {
+      font-size: 2rem;
+    }
   }
   &__modal-text4 {
     color: #fff;
@@ -128,6 +162,9 @@
         }
       }
     }
+    @include mobile-big {
+      font-size: 1.2rem;
+    }
   }
 
   &__button-ikon {
@@ -147,6 +184,7 @@
     width: 100%;
     @include laptop-l {
       flex-direction: column;
+      margin-top: 50px;
     }
   }
   &__modal-footer-text {
@@ -156,12 +194,22 @@
     width: 348px;
     @include laptop-l {
       width: auto;
+      font-size: 4rem;
+    }
+    @include mobile-big {
+      font-size: 3rem;
     }
   }
   &__form {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @include laptop-l {
+      margin-top: 20px;
+    }
+    @include mobile-big {
+      gap: 10px;
+    }
   }
 
   &__send-block {
@@ -169,12 +217,22 @@
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+    @include laptop-l {
+      margin-top: 0px;
+    }
   }
   &__send-text {
     color: white;
     font-family: Formular;
     font-size: 1.4rem;
     max-width: 449px;
+    @include tablet {
+      flex-basis: 65%;
+    }
+    @include mobile-big {
+      font-size: 1.2rem;
+      flex-basis: 65%;
+    }
   }
   &__button_send {
     width: 170px;
@@ -192,6 +250,9 @@
       color: white;
       font-family: Formular;
       font-size: 3rem;
+      @include mobile-big {
+        font-size: 2rem;
+      }
     }
   }
   &__header {
@@ -206,6 +267,9 @@
     }
     @include tablet {
       font-size: 3rem;
+    }
+    @include mobile-big {
+      font-size: 2rem;
     }
   }
   &__linkArrow-ikon {
@@ -224,6 +288,14 @@
       justify-content: center;
     }
   }
+  &__img {
+    @include tablet {
+      width: 200px;
+    }
+    @include mobile-big {
+      width: 150px;
+    }
+  }
   &__text-flex {
     display: flex;
     flex-direction: column;
@@ -235,6 +307,9 @@
     font-family: Formular;
     font-size: 3.2rem;
     font-weight: 700;
+    @include tablet {
+      font-size: 2rem;
+    }
   }
   &__slide-text2 {
     color: #fff;
@@ -261,6 +336,14 @@
 }
 .splide__slide {
   position: relative;
+  @include tablet {
+    width: 200px !important;
+    margin-right: 30px !important;
+  }
+  @include mobile-big {
+    width: 150px !important;
+    margin-right: 20px !important;
+  }
   cursor: pointer;
   &:hover {
     .freeApartment__Arrow-apart-ikon {

@@ -61,6 +61,13 @@ html {
   margin-left: 65px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .header__menuOn-ikon {
+    width: 30px;
+    height: 28px;
+    margin-left: 55px;
+  }
+}
 .header__button {
   width: 240px;
   height: 50px;
@@ -601,6 +608,16 @@ html {
   overflow: hidden;
   transition: height 0.5s ease;
 }
+@media (max-width: 768px) {
+  .freeApartment__wrapper {
+    height: 700px;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__wrapper {
+    height: 600px;
+  }
+}
 .freeApartment__modal {
   width: 100%;
   height: 1343px;
@@ -613,6 +630,16 @@ html {
   flex-direction: column;
   transform: translateY(-100%);
   transition: transform 0.5s ease;
+  align-items: center;
+}
+.freeApartment__modal-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1440px) {
+  .freeApartment__modal-wrapper {
+    width: 90%;
+  }
 }
 .freeApartment__modal-icon {
   display: flex;
@@ -629,6 +656,7 @@ html {
   .freeApartment__modal-close-ikon {
     width: 30px;
     height: 28px;
+    margin-right: 0px;
   }
 }
 .freeApartment__modal-head {
@@ -646,6 +674,11 @@ html {
     margin-top: 5px;
   }
 }
+@media (max-width: 475px) {
+  .freeApartment__modal-head {
+    font-size: 2rem;
+  }
+}
 .freeApartment__modal-flex {
   max-width: 1311px;
   display: flex;
@@ -659,7 +692,12 @@ html {
   }
 }
 @media (max-width: 1440px) {
-  .freeApartment__img {
+  .freeApartment__modal-img {
+    width: 430px;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__modal-img {
     width: 300px;
   }
 }
@@ -669,17 +707,37 @@ html {
   font-size: 7.2rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .freeApartment__modal-text1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__modal-text1 {
+    font-size: 3rem;
+  }
+}
 .freeApartment__modal-text2 {
   color: #fff;
   font-family: Formular;
   font-size: 2.8rem;
   font-weight: 700;
 }
+@media (max-width: 475px) {
+  .freeApartment__modal-text2 {
+    font-size: 1.8rem;
+  }
+}
 .freeApartment__modal-text3 {
   color: #fff;
   font-family: Formular;
   font-size: 3.6rem;
   font-weight: 700;
+}
+@media (max-width: 475px) {
+  .freeApartment__modal-text3 {
+    font-size: 2rem;
+  }
 }
 .freeApartment__modal-text4 {
   color: #fff;
@@ -720,6 +778,11 @@ html {
 .freeApartment__button:hover .freeApartment__button-ikon * {
   stroke: black;
 }
+@media (max-width: 475px) {
+  .freeApartment__button {
+    font-size: 1.2rem;
+  }
+}
 .freeApartment__button-ikon {
   width: 20px;
   height: 20px;
@@ -738,6 +801,7 @@ html {
 @media (max-width: 1440px) {
   .freeApartment__modal-footer {
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 .freeApartment__modal-footer-text {
@@ -749,6 +813,12 @@ html {
 @media (max-width: 1440px) {
   .freeApartment__modal-footer-text {
     width: auto;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__modal-footer-text {
+    font-size: 3rem;
   }
 }
 .freeApartment__form {
@@ -756,17 +826,43 @@ html {
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 1440px) {
+  .freeApartment__form {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__form {
+    gap: 10px;
+  }
+}
 .freeApartment__send-block {
   display: flex;
   align-items: center;
   gap: 30px;
   margin-top: 20px;
 }
+@media (max-width: 1440px) {
+  .freeApartment__send-block {
+    margin-top: 0px;
+  }
+}
 .freeApartment__send-text {
   color: white;
   font-family: Formular;
   font-size: 1.4rem;
   max-width: 449px;
+}
+@media (max-width: 768px) {
+  .freeApartment__send-text {
+    flex-basis: 65%;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__send-text {
+    font-size: 1.2rem;
+    flex-basis: 65%;
+  }
 }
 .freeApartment__button_send {
   width: 170px;
@@ -791,6 +887,14 @@ html {
   font-family: Formular;
   font-size: 3rem;
 }
+@media (max-width: 475px) {
+  .freeApartment__input::-moz-placeholder {
+    font-size: 2rem;
+  }
+  .freeApartment__input::placeholder {
+    font-size: 2rem;
+  }
+}
 .freeApartment__header {
   color: #fff;
   font-family: Formular;
@@ -807,6 +911,11 @@ html {
 @media (max-width: 768px) {
   .freeApartment__header {
     font-size: 3rem;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__header {
+    font-size: 2rem;
   }
 }
 .freeApartment__linkArrow-ikon {
@@ -827,6 +936,16 @@ html {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  .freeApartment__img {
+    width: 200px;
+  }
+}
+@media (max-width: 475px) {
+  .freeApartment__img {
+    width: 150px;
+  }
+}
 .freeApartment__text-flex {
   display: flex;
   flex-direction: column;
@@ -838,6 +957,11 @@ html {
   font-family: Formular;
   font-size: 3.2rem;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .freeApartment__slide-text1 {
+    font-size: 2rem;
+  }
 }
 .freeApartment__slide-text2 {
   color: #fff;
@@ -866,6 +990,18 @@ html {
 .splide__slide {
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .splide__slide {
+    width: 200px !important;
+    margin-right: 30px !important;
+  }
+}
+@media (max-width: 475px) {
+  .splide__slide {
+    width: 150px !important;
+    margin-right: 20px !important;
+  }
 }
 .splide__slide:hover .freeApartment__Arrow-apart-ikon {
   opacity: 1;
