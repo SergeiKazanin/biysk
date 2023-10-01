@@ -63,8 +63,8 @@ html {
 }
 @media (max-width: 768px) {
   .header__menuOn-ikon {
-    width: 30px;
-    height: 28px;
+    width: 40px;
+    height: 35px;
     margin-left: 45px;
   }
 }
@@ -129,8 +129,8 @@ html {
 }
 @media (max-width: 768px) {
   .header__close-ikon {
-    width: 30px;
-    height: 28px;
+    width: 40px;
+    height: 35px;
   }
 }
 .header__menu-container {
@@ -160,7 +160,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
-  height: 70%;
+  height: 75%;
 }
 .header__list-link {
   margin-left: 65px;
@@ -655,8 +655,8 @@ html {
 }
 @media (max-width: 1440px) {
   .freeApartment__modal-close-ikon {
-    width: 30px;
-    height: 28px;
+    width: 45px;
+    height: 35px;
     margin-right: 0px;
   }
 }

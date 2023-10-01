@@ -22,10 +22,12 @@ closeMenu.addEventListener("click", () => {
 });
 menu.addEventListener("click", () => {
   menu.style.transform = "translateX(-100%)";
+  body.style.overflow = "visible";
 });
 menuLink.forEach((link) => {
   link.addEventListener("click", () => {
     menu.style.transform = "translateX(-100%)";
+    body.style.overflow = "visible";
   });
 });
 menuContainer.addEventListener("click", (e) => {
