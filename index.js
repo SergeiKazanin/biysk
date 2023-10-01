@@ -1,6 +1,8 @@
 const menu = document.querySelector(".header__menu");
+const menuContainer = document.querySelector(".header__menu-container");
 const menuOn = document.querySelector(".header__menuOn-ikon");
 const closeMenu = document.querySelector(".header__close-ikon");
+const menuLink = document.querySelectorAll(".header__link-animCont");
 const tabLink = document.querySelectorAll(".about-place__link");
 const tabImg = document.querySelectorAll(".about-place__tab-img");
 const modalOn = document.querySelectorAll(".splide__slide");
@@ -14,6 +16,17 @@ menuOn.addEventListener("click", () => {
 
 closeMenu.addEventListener("click", () => {
   menu.style.transform = "translateX(-100%)";
+});
+menu.addEventListener("click", () => {
+  menu.style.transform = "translateX(-100%)";
+});
+menuLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.style.transform = "translateX(-100%)";
+  });
+});
+menuContainer.addEventListener("click", (e) => {
+  e.stopPropagation();
 });
 
 modalOn.forEach((elem) =>
