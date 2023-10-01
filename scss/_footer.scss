@@ -11,6 +11,10 @@
     @include laptop-l {
       height: fit-content;
       width: 90%;
+      gap: 60px;
+    }
+    @include tablet {
+      gap: 30px;
     }
   }
   &__feedback {

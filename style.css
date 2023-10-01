@@ -1052,6 +1052,12 @@ html {
     height: -moz-fit-content;
     height: fit-content;
     width: 90%;
+    gap: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    gap: 30px;
   }
 }
 .footer__feedback {
