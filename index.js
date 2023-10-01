@@ -9,13 +9,16 @@ const modalOn = document.querySelectorAll(".splide__slide");
 const modalClose = document.querySelector(".freeApartment__modal-close-ikon");
 const modal = document.querySelector(".freeApartment__modal");
 const wrapperModal = document.querySelector(".freeApartment__wrapper");
+const body = document.body;
 
 menuOn.addEventListener("click", () => {
   menu.style.transform = "translateX(0)";
+  body.style.overflow = "hidden";
 });
 
 closeMenu.addEventListener("click", () => {
   menu.style.transform = "translateX(-100%)";
+  body.style.overflow = "visible";
 });
 menu.addEventListener("click", () => {
   menu.style.transform = "translateX(-100%)";
