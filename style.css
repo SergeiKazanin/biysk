@@ -68,9 +68,35 @@ html {
     margin-left: 45px;
   }
 }
+.header__button-wrapper {
+  display: flex;
+  margin-right: 65px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1440px) {
+  .header__button-wrapper {
+    display: none;
+  }
+}
+.header__button-ikon2 {
+  width: 10px;
+  height: 52px;
+  transition: all 0.5s ease;
+}
+.header__button-ikon3 {
+  width: 10px;
+  height: 52px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 .header__button {
   width: 240px;
-  height: 50px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,15 +105,11 @@ html {
   font-family: Formular;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-right: 65px;
-  border: 1.8px black solid;
+  border: 1.9px black solid;
   border-right: none;
   transition: all 0.5s ease;
   cursor: pointer;
-  position: relative;
-  background: black linear-gradient(to bottom right, transparent 50%, black 50%) calc(100% + 2px) 100%/14px 70px no-repeat;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
-          clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
+  background-color: black;
 }
 .header__button:hover {
   background-color: transparent;
@@ -96,10 +118,11 @@ html {
 .header__button:hover .header__button-ikon * {
   stroke: black;
 }
-@media (max-width: 1440px) {
-  .header__button {
-    display: none;
-  }
+.header__button:hover ~ .header__button-ikon2 {
+  opacity: 0;
+}
+.header__button:hover ~ .header__button-ikon3 {
+  opacity: 1;
 }
 .header__button-ikon {
   width: 20px;
@@ -304,14 +327,65 @@ html {
 .about-biysk__text2:hover {
   text-decoration: underline;
 }
-.about-biysk__button {
-  margin-top: 160px;
+.about-biysk__button-wrapper {
+  display: flex;
+  margin-right: 65px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 65px;
 }
-@media (max-width: 1440px) {
-  .about-biysk__button {
-    margin-top: 30px;
-    display: flex;
-  }
+.about-biysk__button-ikon2 {
+  width: 10px;
+  height: 52px;
+  transition: all 0.5s ease;
+}
+.about-biysk__button-ikon3 {
+  width: 10px;
+  height: 52px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.about-biysk__button {
+  width: 240px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-family: Formular;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 1.9px black solid;
+  border-right: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: black;
+}
+.about-biysk__button:hover {
+  background-color: transparent;
+  color: black;
+}
+.about-biysk__button:hover .about-biysk__button-ikon * {
+  stroke: black;
+}
+.about-biysk__button:hover ~ .about-biysk__button-ikon2 {
+  opacity: 0;
+}
+.about-biysk__button:hover ~ .about-biysk__button-ikon3 {
+  opacity: 1;
+}
+.about-biysk__button-ikon {
+  width: 20px;
+  height: 20px;
+}
+.about-biysk__button-ikon * {
+  stroke: white;
+  transition: stroke 0.5s ease;
 }
 .about-biysk__sity {
   display: flex;
@@ -482,9 +556,31 @@ html {
   display: flex;
   flex-direction: column;
 }
+.newSity__button-wrapper {
+  display: flex;
+  margin-right: 65px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+}
+.newSity__button-ikon2 {
+  width: 10px;
+  height: 52px;
+  transition: all 0.5s ease;
+}
+.newSity__button-ikon3 {
+  width: 10px;
+  height: 52px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
 .newSity__button {
-  width: 210px;
-  height: 50px;
+  width: 240px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -493,15 +589,11 @@ html {
   font-family: Formular;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-right: 65px;
-  border: 2px black solid;
+  border: 1.9px black solid;
   border-right: none;
   transition: all 0.5s ease;
   cursor: pointer;
-  position: relative;
-  background: transparent linear-gradient(to bottom right, transparent 50%, black 50%) calc(100% + 2px) 100%/13px 70px no-repeat;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
-          clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
+  background-color: white;
 }
 .newSity__button:hover {
   background-color: black;
@@ -510,8 +602,13 @@ html {
 .newSity__button:hover .newSity__button-ikon * {
   stroke: white;
 }
+.newSity__button:hover ~ .newSity__button-ikon2 {
+  opacity: 0;
+}
+.newSity__button:hover ~ .newSity__button-ikon3 {
+  opacity: 1;
+}
 .newSity__button-ikon {
-  z-index: 3;
   width: 20px;
   height: 20px;
 }
@@ -543,9 +640,6 @@ html {
   .newSity__left-text {
     width: 300px;
   }
-}
-.newSity__button {
-  margin-top: 30px;
 }
 .newSity__left-img {
   margin-top: 175px;

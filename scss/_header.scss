@@ -45,10 +45,32 @@
       margin-left: 45px;
     }
   }
-
+  &__button-wrapper {
+    display: flex;
+    margin-right: 65px;
+    position: relative;
+    width: fit-content;
+    @include laptop-l {
+      display: none;
+    }
+  }
+  &__button-ikon2 {
+    width: 10px;
+    height: 52px;
+    transition: all 0.5s ease;
+  }
+  &__button-ikon3 {
+    width: 10px;
+    height: 52px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
   &__button {
     width: 240px;
-    height: 50px;
+    height: 49px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,18 +79,12 @@
     font-family: Formular;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-right: 65px;
-    border: 1.8px black solid;
+    border: 1.9px black solid;
     border-right: none;
     transition: all 0.5s ease;
     cursor: pointer;
-    position: relative;
-    background: black
-      linear-gradient(to bottom right, transparent 50%, black 50%)
-      calc(100% + 2px) 100%/14px 70px no-repeat;
 
-    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 10px) 100%, 0 100%);
-
+    background-color: black;
     &:hover {
       background-color: transparent;
       color: black;
@@ -79,9 +95,14 @@
           }
         }
       }
-    }
-    @include laptop-l {
-      display: none;
+      ~ .header {
+        &__button-ikon2 {
+          opacity: 0;
+        }
+        &__button-ikon3 {
+          opacity: 1;
+        }
+      }
     }
   }
 

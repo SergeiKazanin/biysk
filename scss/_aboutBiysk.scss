@@ -65,11 +65,71 @@
       text-decoration: underline;
     }
   }
+  &__button-wrapper {
+    display: flex;
+    margin-right: 65px;
+    position: relative;
+    width: fit-content;
+    margin-top: 65px;
+  }
+  &__button-ikon2 {
+    width: 10px;
+    height: 52px;
+    transition: all 0.5s ease;
+  }
+  &__button-ikon3 {
+    width: 10px;
+    height: 52px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
   &__button {
-    margin-top: 160px;
-    @include laptop-l {
-      margin-top: 30px;
-      display: flex;
+    width: 240px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-family: Formular;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1.9px black solid;
+    border-right: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    background-color: black;
+    &:hover {
+      background-color: transparent;
+      color: black;
+      .about-biysk {
+        &__button-ikon {
+          * {
+            stroke: black;
+          }
+        }
+      }
+      ~ .about-biysk {
+        &__button-ikon2 {
+          opacity: 0;
+        }
+        &__button-ikon3 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__button-ikon {
+    width: 20px;
+    height: 20px;
+    * {
+      stroke: white;
+      transition: stroke 0.5s ease;
     }
   }
   &__sity {
